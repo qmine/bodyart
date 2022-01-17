@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<title>Olivia Moore</title>
+		<title>Olivia Moore | Mint</title>
 
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
@@ -9,13 +9,94 @@
 
 		<!-- Flavicon icon -->
 		<link href="assets/icons/favicon.ico" rel="icon">
-		
+
 		<!-- Bootstrap CSS -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 		<style type="text/css">
-			.fillRemaining {
-				height: calc(100vh - 80px);
+			.masthead {
+				background-color: #f8f9fa;
+				padding-top: 9.5rem;
+				padding-bottom: 5rem;
+			}
+			.masthead .masthead-art-mockup {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				position: relative;
+			}
+			.masthead .masthead-art-mockup .circle {
+				position: absolute;
+				fill: url(#circleGradient);
+				width: 70%;
+				display: none;
+			}
+			.masthead .masthead-art-mockup .circle .gradient-start-color {
+				stop-color: #2937f0;
+			}
+			.masthead .masthead-art-mockup .circle .gradient-end-color {
+				stop-color: #9f1ae2;
+			}
+			.masthead .masthead-art-mockup .shape-1 {
+				position: absolute;
+				height: 1rem;
+				width: 1rem;
+				transform: rotate(-10deg);
+				fill: #2937f0;
+				bottom: 15%;
+				left: 10%;
+			}
+			.masthead .masthead-art-mockup .shape-2 {
+				position: absolute;
+				height: 0.75rem;
+				width: 0.75rem;
+				fill: #2937f0;
+				top: 15%;
+				right: 10%;
+			}
+			.masthead .masthead-art-mockup .art-wrapper {
+				max-width: 10rem;
+			}
+			@media (min-width: 576px) {
+				.masthead .masthead-art-mockup .circle {
+					width: 70%;
+					display: block;
+				}
+				.masthead .masthead-art-mockup .art-wrapper {
+					max-width: 12.5rem;
+				}
+			}
+			@media (min-width: 768px) {
+				.masthead .masthead-art-mockup .circle {
+					width: 60%;
+				}
+				.masthead .masthead-art-mockup .art-wrapper {
+					max-width: 15rem;
+				}
+			}
+			@media (min-width: 992px) {
+				.masthead .masthead-art-mockup .circle {
+					width: 90%;
+				}
+				.masthead .masthead-art-mockup .art-wrapper {
+					max-width: 15rem;
+				}
+			}
+			@media (min-width: 1200px) {
+				.masthead .masthead-art-mockup .circle {
+					width: 75%;
+				}
+				.masthead .masthead-art-mockup .art-wrapper {
+					max-width: 15rem;
+				}
+			}
+			@media (min-width: 1400px) {
+				.masthead .masthead-art-mockup .circle {
+					width: 70%;
+				}
+				.masthead .masthead-art-mockup .art-wrapper {
+					max-width: 17rem;
+				}
 			}
 		</style>
 	</head>
@@ -42,31 +123,54 @@
 		</div>
 
 		<!-- Mint -->
-		<main>
-			<div class="fillRemaining bg-light py-5">
-				<div class="container pb-3">
-					<div class="row row-cols-1 row-cols-md-2">
-						<div class="col" align="center">
-							<img src="assets/images/art2_720x1080.png" style="max-height: 512px">
-						</div>
+		<main class="masthead">
+			<div class="container">
+				<div class="row gx-5 align-items-center">
 
-						<div class="col py-3">
-							<small>
-								<div class="mt-2"><b>Title:</b> Magic Mountain</div>
-								<div class="mt-2"><b>Inspiration:</b> The painting is an abstract self-portrait. I feel so stagnant and still in my creative life. And I feel frustrated because I am not moving in the direction I desire. I have this self placed judgement against my art and feel I need to prove myself in my work.</div>
-								<div class="mt-2"><b>Artist:</b> Olivia Moore</div>
-								<div class="mt-2"><b>Size:</b> 500 W x 800 H x 16 D mm</div>
-								<div class="mt-2"><b>Dimensions:</b> 1280 W x 1920 H px</div>
-								<div class="mt-2"><b>Original:</b> One-of-a-kind Artwork</div>
-								<div class="mt-5">
-									<button type="button" class="btn btn-sm btn-primary">Connect</button>
-								</div>
-							</small>
+					<div class="col-lg-6">
+						<div class="mb-5 mb-lg-0 text-center text-lg-start">
+							<h4 class="display-4 lh-1 mb-3">Magic Mountain</h4>
+							<p class="fw-normal text-muted mb-2">The painting is an abstract self-portrait. I feel so stagnant and still in my creative life. And I feel frustrated because I am not moving in the direction I desire. I have this self placed judgement against my art and feel I need to prove myself in my work.</p>
+							<p class="fw-normal text-muted mb-2"><b>Artist:</b> Olivia Moore</p>
+							<p class="fw-normal text-muted mb-2"><b>Dimensions:</b> 500 W x 800 H x 16 D mm</p>
+							<p class="fw-normal text-muted mb-5"><b>Original:</b> One-of-a-kind Artwork</p>
+							<div class="d-flex flex-column flex-lg-row align-items-center">
+								<button class="btn btn-primary me-lg-3 mb-4 mb-lg-0" type="button" disabled>Connect</button>
+							</div>
 						</div>
 					</div>
+
+					<div class="col-lg-6">
+						<div class="masthead-art-mockup">
+							<div class="art-wrapper">
+								<div>
+									<div class="screen">
+										<img src="assets/images/art2_720x1080.png" style="max-width: 100%">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</main>
+
+
+		<!-- Footer -->
+		<footer class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-4 border-top">
+			<div class="container-fluid mx-3">
+				<small class="text-secondary">
+					<p class="float-end mb-1">
+						<!-- <a href="#"><i class="fas fa-caret-square-up fa-3x" style="color: rgb(94, 152, 136);"></i></a> -->
+					</p>
+					<p class="mb-1">&copy; Olivia gallery footer prototype. Under development.</p>
+					<p class="mb-0">
+						New to Olivia art? <a style="color: inherit;" href="read.html"><b>Read more</b></a> or check out <a style="color: inherit;" href="http://159.223.162.211"><b>the gallery.</b></a>
+					</p>
+				</small>
+			</div>
+		</footer>
 
 
 		<!-- Popper JS -->
