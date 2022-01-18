@@ -16,15 +16,15 @@ for file in os.listdir(OUT_DIR):
 
 
 wallet = '2VC7KniN9RVquCZzSTTtxU9zXhSLuangj7NDEh8zuQSk'
-image = Image.open(BASE_DIR / 'target.jpg')
+image = Image.open(BASE_DIR / 'target.png')
 for i in range(1000):
-	image.save(OUT_DIR / f'{i}.jpg')
+	image.save(OUT_DIR / f'{i}.png')
 	meta = {
 		"name": f"Magic Mountain #{i+1}",
 		"symbol": "",
 		"description": 'Access token to the "Magic Mountain" NFT by Olivia Moore! (More on olivia-art.com)',
 		"seller_fee_basis_points": 25000,
-		"image": "image.jpg",
+		"image": "image.png",
 		"attributes": [],
 		"collection": {
 			 "name": "olivia-art.com access NFT",
@@ -33,8 +33,8 @@ for i in range(1000):
 		"properties": {
 			"files": [
 				{
-					"uri": "image.jpg",
-					"type": "image/jpg"
+					"uri": "image.png",
+					"type": "image/png"
 				}
 			],
 			"category": "image",
