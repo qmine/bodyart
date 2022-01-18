@@ -16,7 +16,7 @@ for file in os.listdir(OUT_DIR):
 
 
 wallet = '2VC7KniN9RVquCZzSTTtxU9zXhSLuangj7NDEh8zuQSk'
-image = Image.open(BASE_DIR / 'generator' / 'target.jpg')
+image = Image.open(BASE_DIR / 'target.jpg')
 for i in range(1000):
 	image.save(OUT_DIR / f'{i}.jpg')
 	meta = {
