@@ -18,8 +18,7 @@
 	</head>
 
 
-	<body>
-
+	<body class="d-flex flex-column min-vh-100">
 		<!-- Navbar -->
 		<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between p-3 border-bottom">
 			<div class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
@@ -87,7 +86,7 @@
 
 
 		<!-- Footer -->
-		<footer class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-4 border-top">
+		<footer class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-4 border-top bg-light mt-auto">
 			<div class="container-fluid mx-3">
 				<small class="text-secondary">
 					<p class="float-end mb-1">
@@ -101,6 +100,14 @@
 		</footer>
 
 
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-S9FKMNRK9K"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-S9FKMNRK9K');
+		</script>
 		<!-- Popper JS -->
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 		<!-- Bootstrap JS -->
