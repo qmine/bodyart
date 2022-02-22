@@ -117,6 +117,7 @@
 
 		<script type="text/javascript">
 			$("#VideoButtonID").click(function() {
+				console.log('clicked')
 				if (window.solana.isConnected){
 					var wallet = window.solana.publicKey.toString()
 					$.ajax({
