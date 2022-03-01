@@ -123,13 +123,10 @@
 					VideoButton = $('#VideoButtonID')[0]
 					$(VideoButton).click(function() {
 						$.ajax({
-							type: "POST",
-							url: "http://137.184.77.45/validate/",
-							data: {
-								csrfmiddlewaretoken: '{{ csrf_token }}',
-								wallet: window.solana.publicKey.toString(),
-							},
+							type: "GET",
+							url: "https://olivia-art.com/api/solana/wallet/validate/" + window.solana.publicKey.toString() + "/",
 							success: function(data) {
+								console.log(data)
 								if (data.validated) {
 									var player = videojs('my-video')
 									player.src({
