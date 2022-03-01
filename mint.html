@@ -125,6 +125,7 @@
 						$.ajax({
 							type: "GET",
 							url: "https://olivia-art.com/api/solana/wallet/validate/" + window.solana.publicKey.toString() + "/",
+							crossDomain: true,
 							success: function(data) {
 								console.log(data)
 								if (data.validated) {
