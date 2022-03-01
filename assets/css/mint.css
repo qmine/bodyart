@@ -87,6 +87,7 @@
 	display: none !important;
 }
 .btn-mint {
+	margin-right: 1rem !important;
 	color: #fff !important;
 	background-color: #2e7d32 !important;
 }
@@ -96,4 +97,7 @@
 .btn-mint:disabled {
 	background-color: #1b5e20 !important;
 	opacity: 50% !important;
+}
+.btn-video {
+	padding: 10px !important;
 }
